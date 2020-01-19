@@ -36,6 +36,6 @@ def convolve(img, kernel):
             result[i][j] = sum/255
 
     return result
-result = convolve(red_img, translation)
+result = convolve(red_img, sobel)
 cv2.imshow('Convolve', result)
 cv2.waitKey(0)
