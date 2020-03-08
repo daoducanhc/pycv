@@ -1,6 +1,5 @@
 import cv2
 # import numpy as np
-
 img_path = 'resources/ex1.jpg'
 
 img = cv2.imread(img_path)
