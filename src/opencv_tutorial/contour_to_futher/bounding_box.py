@@ -9,7 +9,8 @@ args = vars(ap.parse_args())
 image = cv2.imread(args["image"])
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-cnts = cv2.findContours(gray.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+cnts = cv2.findContours(gray.copy(), cv2.RETR_EXTERNAL,
+ cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
 clone = image.copy()
 
